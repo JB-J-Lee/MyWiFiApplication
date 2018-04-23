@@ -8,6 +8,19 @@ Introduction
 
 This sample demonstrates how to connect specific wifi on Android.
 
+```xml
+public SpecificWiFi(Context context, OnConnectionResultListener listener, @NonNull String ssid, @NonNull String password) {
+        this.context = context;
+        this.listener = listener;
+        this.ssid = ssid;
+        this.password = password;
+    }
+```
+
+In some cases, you may want to customize this specific ssid. When doing so, change the ssid and password. 
+For an example, see this sample's `SpecificWiFi` class.
+
+
 Pre-requisites
 --------------
 
