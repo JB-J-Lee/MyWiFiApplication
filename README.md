@@ -17,7 +17,7 @@ public SpecificWiFi(Context context, OnConnectionResultListener listener, @NonNu
     }
 ```
 
-In some cases, you may want to customize this specific ssid. When doing so, change the ssid and password. 
+In some cases, you may want to customize this specific ssid. When doing so, change the `ssid` and `password`. 
 For an example, see this sample's `SpecificWiFi` class.
 
 
