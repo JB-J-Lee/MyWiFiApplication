@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Specific WiFi", Snackbar.LENGTH_INDEFINITE)
-                        .setAction("Action", new View.OnClickListener() {
+                Snackbar.make(view, R.string.action_wifi, Snackbar.LENGTH_INDEFINITE)
+                        .setAction(R.string.action, new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
                                 new MyWiFiTask(getBaseContext(), new SpecificWiFi.OnConnectionResultListener() {
