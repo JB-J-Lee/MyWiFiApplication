@@ -15,7 +15,7 @@ public class MyWiFiTask extends AsyncTask<Void, Void, Boolean> {
 
     @Override
     protected Boolean doInBackground(Void... voids) {
-        SpecificWiFi wifi = new SpecificWiFi(context, listener, null, null);
+        SpecificWiFi wifi = new SpecificWiFi(context, listener, "yourssid", "yourpassword");
         try {
             return wifi.connectWiFi();
         } catch (InterruptedException e) {
